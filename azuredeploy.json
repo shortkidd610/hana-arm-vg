@@ -78,6 +78,12 @@
                 "description": "The management subnet prefix"
             }
         },
+        "customURI": {
+            "type": "string",
+            "metadata": {
+                "description": "URI where SAP bits are uploaded"
+            }
+        },
         "VMUserName": {
             "type": "string",
             "metadata": {
@@ -101,6 +107,20 @@
                 "SLES for SAP 12 SP3",
                 "RHEL 7.2 for SAP HANA"
             ]
+        },
+        "HANASID": {
+            "type": "string",
+            "metadata": {
+                "description": "SAP HANA System ID"
+            },
+            "defaultValue": "H10"
+        },
+        "HANANumber": {
+            "type": "string",
+            "metadata": {
+                "description": "SAP HANA Instance Number"
+            },
+            "defaultValue": "00"
         },
         "ExistingNetworkResourceGroup": {
             "type": "string",
